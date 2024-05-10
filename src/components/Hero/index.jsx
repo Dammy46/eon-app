@@ -49,6 +49,9 @@ const Hero = () => {
     <section className="app-hero">
       <Navbar />
       <div className="container hero-content">
+        <h2>
+          Fueling <br /> Innovation
+        </h2>
         <div className="flex hero-info">
           <p className="hero-desc">
             <span>
