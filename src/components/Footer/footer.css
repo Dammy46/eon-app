@@ -22,7 +22,6 @@
 .footer-desc {
   color: #565656;
   font-size: 22px;
-  font-family: hoves-light, sans-serif;
   width: auto;
   margin-top: 10px;
   text-align: center;
@@ -68,6 +67,10 @@
   width: 30px;
   height: 30px;
   transform: rotate(-35deg);
+  transition: all 0.3s ease-in-out;
+}
+.input-wrap button:hover svg {
+  transform: rotate(0deg);
 }
 .vertical {
   height: 70px;
@@ -106,7 +109,6 @@
   align-items: center;
   gap: 15px;
   font-size: 48px;
-  font-family: hoves-light, sans-serif;
   width: 100%;
   justify-content: center;
 }
@@ -115,6 +117,10 @@
   height: 20px;
   fill: #729a59;
   transform: rotate(-35deg);
+  transition: all 0.3s ease-in-out;
+}
+.footer-link:hover svg {
+  transform: rotate(0deg);
 }
 .center {
   margin: 3rem 0;

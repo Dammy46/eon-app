@@ -1,11 +1,11 @@
 import React from "react";
 import "./portfolio.css";
-import { MdOutlineArrowForward } from "react-icons/md";
-import Fraqvest from "../../assets/images/fraqvest.png";
-import Oaksvale from "../../assets/images/oaksvale.png";
-import Shazzy from "../../assets/images/shazzy.png";
-import Gamebitty from "../../assets/images/gamebitty.png";
-import Amapiano from "../../assets/images/amapiano.png";
+import AnimatedButton from "../AnimatedButton";
+import Fraqvest from "../../assets/svgs/fraqvest.svg";
+import Oaksvale from "../../assets/svgs/oaksvale.svg";
+import Shazzy from "../../assets/svgs/shazzy.svg";
+import Gamebitty from "../../assets/svgs/gamebitty.svg";
+import Amapiano from "../../assets/svgs/amapiano.svg";
 const Portfolio = () => {
   const companies = [Fraqvest, Oaksvale, Shazzy, Gamebitty, Amapiano];
   return (
@@ -37,9 +37,7 @@ const Portfolio = () => {
                 Investing in Ideas That Solve <span>Critical Problems</span>
               </h2>
               <a href="" className="join-wrap">
-                <button className="flex join-btn">
-                  <span> See all companies</span> <MdOutlineArrowForward />
-                </button>
+                <AnimatedButton>See all companies</AnimatedButton>
               </a>
             </div>
             <div className="invest-companies">

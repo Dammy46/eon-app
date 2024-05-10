@@ -7,10 +7,10 @@
   top: -11px;
   padding: 3rem 1rem 1rem 3rem;
   border-radius: 37px;
+  z-index: 1;
 }
 .menu-title {
   font-size: 16px;
-  font-family: hoves-light, sans-serif;
   color: #0a2440;
 }
 .nav-links {
@@ -31,14 +31,17 @@
 .link-wrap a span {
   font-size: 24px;
   color: #0a2440;
-  font-family: hoves-light;
   white-space: nowrap;
 }
 .link-wrap a svg {
   fill: #729a59;
-  transform: rotate(315deg);
+  transform: rotate(-35deg);
   width: 20px;
   height: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.link-wrap a:hover svg {
+  transform: rotate(0deg);
 }
 @media (max-width: 425px) {
   .menu-container {

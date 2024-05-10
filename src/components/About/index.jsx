@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import { BsArrowRight } from "react-icons/bs";
-import Conference from "../../assets/images/conference.png";
+import Conference from "../../assets/images/conference.jpg";
 const About = () => {
   return (
     <section id="about" className="app-about">

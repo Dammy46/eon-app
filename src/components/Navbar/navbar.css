@@ -18,25 +18,7 @@
 .join-wrap {
   display: none;
 }
-.join-wrap .join-btn {
-  padding: 15px 20px;
-  border: 1px solid #ffffff;
-  border-radius: 70px;
-  background: none;
-  font-family: hoves-regular, sans-serif;
-  font-size: 18px;
-  color: #ffffff;
-  gap: 10px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-}
-.join-wrap .join-btn span {
-  text-shadow: 1px 2px 4px rgb(0 0 0 / 25%);
-  white-space: nowrap;
-}
-.join-wrap .join-btn svg {
-  transform: rotate(315deg);
-}
+
 .burger {
   justify-content: center;
   height: 53px;

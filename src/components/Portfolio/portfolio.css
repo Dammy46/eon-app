@@ -18,7 +18,6 @@
   width: auto;
 }
 .portfolio-desc {
-  /* font-family: hoves-light, sans-serif; */
   font-size: 18px;
   color: #afafaf;
   width: auto;
@@ -39,7 +38,6 @@
 }
 .invest-tag {
   color: rgb(255 255 255 / 60%);
-  font-family: hoves-light, sans-serif;
   font-size: 18px;
 }
 .infos-title {
@@ -73,6 +71,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .grid-logo {
   width: 153px;
@@ -80,6 +80,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.company-grid-item:hover .grid-logo {
+  filter: invert(1);
+}
+.company-grid-item:last-child:hover .grid-logo {
+  filter: brightness(5);
 }
 .invest-content {
   gap: 30px;

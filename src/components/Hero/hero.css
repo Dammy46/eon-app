@@ -12,7 +12,7 @@
   content: "";
   display: block;
   position: absolute;
-  width: 80%;
+  width: 50%;
   height: 100%;
   background-color: #0a244030;
   top: -175px;
@@ -21,6 +21,7 @@
   z-index: 1;
   transform: rotate(166deg);
 }
+
 .hero-content {
   padding-top: 5rem;
   padding-bottom: 14.5rem;
@@ -58,6 +59,25 @@
   gap: 12px;
   cursor: pointer;
   font-weight: 600;
+  position: relative;
+  transition: all 0.4s ease-in;
+}
+.apply-fund-btn button span {
+  position: relative;
+  z-index: 1;
+  text-wrap: nowrap;
+  transition: color 0.4s linear;
+}
+.apply-fund-btn button:hover {
+  color: #ffffff;
+  background: none;
+}
+.apply-fund-btn button svg {
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+.apply-fund-btn button:hover svg {
+  transform: rotate(45deg);
 }
 #scroll-btn {
   position: absolute;

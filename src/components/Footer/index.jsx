@@ -2,7 +2,7 @@ import React from "react";
 import "./footer.css";
 import { BsArrowRight, BsDiscord } from "react-icons/bs";
 import { MdOutlineArrowForward } from "react-icons/md";
-import FooterLogo from "../../assets/images/footer-logo.png";
+import FooterLogo from "../../assets/svgs/footer-logo.svg";
 const Footer = () => {
   const footerLink = [
     { href: "/", label: "About" },
@@ -59,7 +59,7 @@ const Footer = () => {
           <p className="copyright">©2024 Eonfund. All Right Reserved </p>
           <div className="flex regulation">
             <a href="" className="policy">
-              Private policy
+              Privacy policy
             </a>
             <a href="" className="terms">
               Terms & Conditions
