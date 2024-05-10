@@ -49,9 +49,6 @@ const Hero = () => {
     <section className="app-hero">
       <Navbar />
       <div className="container hero-content">
-        <h2>
-          Fueling <br /> Innovation
-        </h2>
         <div className="flex hero-info">
           <p className="hero-desc">
             <span>
@@ -82,6 +79,14 @@ const Hero = () => {
         </div>
       </div>
       <div onClick={() => lenis.scrollTo("#about")} id="scroll-btn"></div>
+      <div className="building" />
+      <div className="hero-title">
+        <h2 className="h2">Fueling</h2>
+        <h2 className="h2">Innovation</h2>
+        {/* <h2>
+          Fueling <br /> Innovation
+        </h2> */}
+      </div>
     </section>
   );
 };

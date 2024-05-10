@@ -6,6 +6,7 @@
   border-top-right-radius: 40px;
   position: relative;
   margin-top: -38px;
+  z-index: 1;
 }
 .section-tag {
   font-size: 20px;
