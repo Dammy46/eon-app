@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: hoves-bold;
+  src: url(../public/TTHoves-Bold.ttf);
+}
+@font-face {
+  font-family: hoves-demibold;
+  src: url(../public/TTHoves-Demibold.ttf);
+}
+@font-face {
+  font-family: hoves-light;
+  src: url(../public/TTHoves-light.ttf);
+}
+@font-face {
+  font-family: hoves-medium;
+  src: url(../public/TTHoves-Medium.ttf);
+}
+@font-face {
+  font-family: hoves-regular;
+  src: url(../public/TTHoves-regular.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: hoves-regular, sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
