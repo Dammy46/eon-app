@@ -86,9 +86,6 @@ const Hero = () => {
       <div className="hero-title">
         <h2 className="h2">Fueling</h2>
         <h2 className="h2">Innovation</h2>
-        {/* <h2>
-          Fueling <br /> Innovation
-        </h2> */}
       </div>
     </section>
   );
