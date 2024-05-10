@@ -95,11 +95,12 @@
   left: -2.2em;
   bottom: -1.5em;
 }
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .hero-content h2 {
     font-size: 58px;
   }
 }
+
 @media (min-width: 1024px) {
   .app-hero {
     background-position: left top;
