@@ -8,9 +8,9 @@ const NavMenu = ({ setActive }) => {
   const lenis = useLenis(({ scroll }) => {});
   const navlinks = [
     { link: "#about", label: "About" },
-    { link: "/", label: "Investment Approach" },
+    { link: "#", label: "Investment Approach" },
     { link: "https://eonfund.medium.com", label: "Blog" },
-    { link: "/", label: "Portfolio" },
+    { link: "#", label: "Portfolio" },
   ];
   const menuVars = {
     initial: {
@@ -102,7 +102,8 @@ const NavMenu = ({ setActive }) => {
               animate="open"
               target={link.label === "Blog" && "_blank"}
               onClick={() => {
-                link.label !== "Blog" && lenis.scrollTo(link.link);
+                link.label !== "Blog" &&
+                  lenis.scrollTo(link.link === "#" ? "unknown" : link.link);
                 setActive(false);
               }}
             >

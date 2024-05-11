@@ -9,7 +9,7 @@ const Footer = () => {
   const lenis = useLenis(({ scroll }) => {});
   const footerLink = [
     { href: "#about", label: "About" },
-    { href: "/", label: "Portfolio" },
+    { href: "#", label: "Portfolio" },
     { href: "https://eonfund.medium.com", label: "Blog" },
   ];
   return (
@@ -48,11 +48,13 @@ const Footer = () => {
                   href={footerLink.href}
                   onClick={() =>
                     footerLink.label !== "Blog" &&
-                    lenis.scrollTo(footerLink.href)
+                    lenis.scrollTo(
+                      footerLink.href === "#" ? "unknown" : footerLink.href
+                    )
                   }
                   key={index}
                   className="footer-link"
-                  target={link.label === "Blog" && "_blank"}
+                  target={footerLink.label === "Blog" && "_blank"}
                 >
                   {footerLink.label}
                   <MdOutlineArrowForward />
