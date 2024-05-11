@@ -56,7 +56,11 @@ const Hero = () => {
               fostering tech pioneers poised to build lasting businesses.
             </span>
           </p>
-          <a href="#" className="apply-fund-btn">
+          <a
+            href="https://t.co/obRmbwRdhr"
+            target="_blank"
+            className="apply-fund-btn"
+          >
             <button
               className="flex"
               style={{ overflow: "hidden" }}

@@ -20,7 +20,11 @@ const Navbar = () => {
           </a>
         </span>
         <div className="flex nav-wrap">
-          <a href="#" className="join-wrap">
+          <a
+            href="https://t.co/obRmbwRdhr"
+            target="_blank"
+            className="join-wrap"
+          >
             <AnimatedButton>Apply for funding</AnimatedButton>
           </a>
           <div className="menu-wrap">

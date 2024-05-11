@@ -124,7 +124,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .grid-container {
-    max-width: 625px;
+    max-width: 545px;
     margin: 0 0 0 auto;
   }
   .grid-item:nth-child(even) .grid-container {
