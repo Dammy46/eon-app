@@ -72,10 +72,18 @@ const Footer = () => {
         <div className="bottom flex">
           <p className="copyright">©2024 Eonfund. All Right Reserved </p>
           <div className="flex regulation">
-            <a href="" className="policy">
+            <a
+              href="https://docs.eonfund.vc/privacy-policy"
+              target="_blank"
+              className="policy"
+            >
               Privacy policy
             </a>
-            <a href="" className="terms">
+            <a
+              href="https://docs.eonfund.vc/terms-and-conditions"
+              target="_blank"
+              className="terms"
+            >
               Terms & Conditions
             </a>
           </div>
