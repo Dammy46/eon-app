@@ -56,7 +56,6 @@ const NavMenu = ({ setActive }) => {
       },
     },
   };
-
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (ref.current && !ref.current.contains(event.target)) {
@@ -101,7 +100,7 @@ const NavMenu = ({ setActive }) => {
               variants={linkVar}
               initial="initial"
               animate="open"
-              target={link.label === "Blog" ? "_blank" : "false"}
+              target={link.label === "Blog" && "_blank"}
               onClick={() => {
                 link.label !== "Blog" && lenis.scrollTo(link.link);
                 setActive(false);

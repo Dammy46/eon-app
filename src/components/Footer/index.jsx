@@ -52,7 +52,7 @@ const Footer = () => {
                   }
                   key={index}
                   className="footer-link"
-                  target={footerLink.label === "Blog" ? "_blank" : "false"}
+                  target={link.label === "Blog" && "_blank"}
                 >
                   {footerLink.label}
                   <MdOutlineArrowForward />
