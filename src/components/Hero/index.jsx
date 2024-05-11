@@ -8,10 +8,7 @@ const Hero = () => {
   const circle = useRef(null);
   let timeline = useRef(null);
   let timeoutId = null;
-  const lenis = useLenis(({ scroll }) => {
-    // called every scroll
-    // console.log(scroll);
-  });
+  const lenis = useLenis(({ scroll }) => {});
 
   useEffect(() => {
     timeline.current = gsap.timeline({ paused: true });
@@ -81,7 +78,11 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div onClick={() => lenis.scrollTo("#about")} id="scroll-btn"></div>
+      <a
+        href="#about"
+        onClick={() => lenis.scrollTo("#about")}
+        id="scroll-btn"
+      ></a>
       <div className="building" />
       <div className="hero-title">
         <h2 className="h2">Fueling</h2>

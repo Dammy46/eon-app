@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./navmenu.css";
 import { MdOutlineArrowForward } from "react-icons/md";
 import { motion } from "framer-motion";
-const NavMenu = () => {
+import { useLenis } from "@studio-freight/react-lenis";
+const NavMenu = ({ setActive }) => {
+  const ref = useRef(null);
+  const lenis = useLenis(({ scroll }) => {});
   const navlinks = [
-    { link: "/", label: "About" },
+    { link: "#about", label: "About" },
     { link: "/", label: "Investment Approach" },
-    { link: "/", label: "Blog" },
+    { link: "https://eonfund.medium.com", label: "Blog" },
     { link: "/", label: "Portfolio" },
   ];
   const menuVars = {
@@ -53,6 +56,21 @@ const NavMenu = () => {
       },
     },
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setActive(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+    // eslint-disable-next-line
+  }, []);
   return (
     <motion.div
       variants={menuVars}
@@ -60,6 +78,7 @@ const NavMenu = () => {
       animate="animate"
       exit="exit"
       className="menu-container"
+      ref={ref}
     >
       <p className="menu-title">
         <span>Menu</span>
@@ -78,10 +97,15 @@ const NavMenu = () => {
             style={{ overflow: "hidden" }}
           >
             <motion.a
-              href="/"
+              href={link.link}
               variants={linkVar}
               initial="initial"
               animate="open"
+              target={link.label === "Blog" ? "_blank" : "false"}
+              onClick={() => {
+                link.label !== "Blog" && lenis.scrollTo(link.link);
+                setActive(false);
+              }}
             >
               <span>{link.label}</span>
               <MdOutlineArrowForward />

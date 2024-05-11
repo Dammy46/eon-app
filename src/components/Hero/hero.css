@@ -178,8 +178,8 @@
     display: block;
   }
   .hero-title h2 {
-    font-size: 140px;
-    line-height: 140px;
+    font-size: 122px;
+    line-height: 106px;
   }
   .hero-info {
     flex-direction: row;

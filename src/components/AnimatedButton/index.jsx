@@ -15,7 +15,7 @@ const AnimatedButton = ({ children, ...attributes }) => {
           top: "-25%",
           width: "150%",
           right: "100",
-          left: "-100",
+          left: "-78",
           margin: "auto",
           duration: 0.4,
           ease: "power3.in",
