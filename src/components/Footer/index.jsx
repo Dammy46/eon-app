@@ -33,7 +33,11 @@ const Footer = () => {
                 </button>
               </form>
               <div className="vertical" />
-              <a href="#" className="join-discord flex">
+              <a
+                href="https://twitter.com/eonfund"
+                target="_blank"
+                className="join-discord flex"
+              >
                 <FaXTwitter />
                 <p className="discord-text">
                   <span>Follow us on X</span>
