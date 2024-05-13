@@ -83,8 +83,8 @@ const Hero = () => {
         </div>
       </div>
       <a
-        href="#about"
-        onClick={() => lenis.scrollTo("#about")}
+        href="#investment"
+        onClick={() => lenis.scrollTo("#investment")}
         id="scroll-btn"
       ></a>
       <div className="building" />
