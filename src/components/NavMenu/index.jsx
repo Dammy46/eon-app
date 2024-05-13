@@ -8,9 +8,9 @@ const NavMenu = ({ setActive }) => {
   const lenis = useLenis(({ scroll }) => {});
   const navlinks = [
     { link: "#about", label: "About" },
-    { link: "#", label: "Investment Approach" },
+    { link: "#investment", label: "Investment Approach" },
     { link: "https://eonfund.medium.com", label: "Blog" },
-    { link: "#", label: "Portfolio" },
+    { link: "#portfolio", label: "Portfolio" },
   ];
   const menuVars = {
     initial: {

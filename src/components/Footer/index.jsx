@@ -8,8 +8,8 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   const lenis = useLenis(({ scroll }) => {});
   const footerLink = [
-    { href: "#about", label: "About" },
-    { href: "#", label: "Portfolio" },
+    { href: "#", label: "About" },
+    { href: "#portfolio", label: "Portfolio" },
     { href: "https://eonfund.medium.com", label: "Blog" },
   ];
   return (

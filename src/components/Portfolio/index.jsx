@@ -25,7 +25,7 @@ const Portfolio = () => {
           </span>
         </h5>
       </div>
-      <div className="investment-wrap">
+      <div id="portfolio" className="investment-wrap">
         <div className="container">
           <div className="divider" />
           <div className="flex invest-content">

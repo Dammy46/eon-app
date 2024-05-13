@@ -4,7 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 import Conference from "../../assets/images/conference.jpg";
 const About = () => {
   return (
-    <section id="about" className="app-about">
+    <section id="investment" className="app-about">
       <div className="container">
         <p className="section-tag">
           <span>What are we looking for</span>
